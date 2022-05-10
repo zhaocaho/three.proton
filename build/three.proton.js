@@ -3362,8 +3362,8 @@
 
   Proton.Util.inherits(MeshZone, Proton.Zone);
   MeshZone.prototype.getPosition = function () {
-    var postion = this.geometry.getAttribute("position");
-    var length = postion.count;
+    var position = this.geometry.getAttribute("position");
+    var length = position.count;
     var rVector = new THREE.Vector3();
     rVector.fromBufferAttribute(position, (length * Math.random()) >> 0);
     this.vector.x = rVector.x * this.scale;
