@@ -14,7 +14,7 @@
 
     function MeshZone(geometry, scale) {
         MeshZone._super_.call(this);
-        if (geometry instanceof THREE.Geometry) {
+        if (geometry instanceof THREE.BufferGeometry) {
             this.geometry = geometry;
         } else {
             this.geometry = geometry.geometry;
