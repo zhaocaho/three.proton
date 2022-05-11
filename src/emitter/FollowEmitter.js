@@ -36,7 +36,7 @@
             self.mouseup.call(self, e);
         };
         
-        this.mouseTarget.addEventListener('mousemove', this.mousemoveHandler, false);
+        this.mouseTarget.addEventListener('pointermove', this.mousemoveHandler, false);
     }
 
     /**
